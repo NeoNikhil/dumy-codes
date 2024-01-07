@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header{
+background-image: linear-gradient(rgb(236, 226, 83),black);
+width: 910px;
+height: 20px;
+
+    }
+
+    *{
+      padding: 0px;
+      margin: 0;
+    }
+
+
+    li{
+      list-style-type: none;
+      
+    }
+
+
+    nav{
+      display: flex;
+      justify-content: space-evenly
+
+    }
+
+
+    footer{
+      background-image: linear-gradient(rgb(58, 133, 133),black);
+width: 910px;
+height: 100px;
+ font-size: 10px;
+ display: flex;
+      justify-content: space-around;
+      padding-top: 15px;
+    }
+
+
+    .po{
+
+
+      background-image: linear-gradient(rgb(58, 133, 98),black);
+width: 910px;
+height: 300px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav >
+      <li>HOME</li>
+      <li>BLOG</li>
+      <li>FEEDBACK</li>
+      <li>CONTACT</li>
+    </nav>
+  </header>
+
+
+  <div class="po" id='c1' onmouseover="f1()">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero est distinctio reiciendis ut sapiente voluptate possimus expedita deleniti corrupti voluptates laudantium vero tenetur, asperiores ab nostrum id cum numquam?</p>
+
+
+  <p>hello</p>
+  <p>MR.Devid</p>
+  </div>
+
+  <footer>
+
+
+    <div class="F">
+      <li>HOME</li>
+      <li>BLOG</li>
+      <li>FEEDBACK</li>
+      <li>CONTACT</li>
+
+    </div>
+    <div class="F">
+      <li>HOME</li>
+      <li>BLOG</li>
+      <li>FEEDBACK</li>
+      <li>CONTACT</li>
+      
+    </div>
+    <div class="F">
+      <li>HOME</li>
+      <li>BLOG</li>
+      <li>FEEDBACK</li>
+      <li>CONTACT</li>
+      
+    </div>
+  </footer>
+
+  <script>
+
+let x = document.getElementById('c1');
+ 
+
+function f1(){
+  x.style.color='white';
+  // x.style.fontFamily
+
+}
+// console.log(x);
+
+
+
+let y = document.getElementsByClassName('F');
+for(let i=0;i<=y.length-1;i++){
+  y[i].style.fontFamily='Lemon';
+}
+console.log(y);
+
+
+
+let z = document.getElementsByTagName('p')
+
+
+// z[0]=style.color="red";
+// z[1]=style.color="black";
+// z[2]=style.color="pink";
+// console.log(z[1]);
+
+addEventListener('click',()=>{
+  for(let i=0;i<=z.length-1;i++){
+  z[i].style.color="red"
+
+}
+})
+
+  </script>
+  
+</body>
+</html>

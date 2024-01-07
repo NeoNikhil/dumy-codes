@@ -1,0 +1,135 @@
+<div class="container mt-5 mb-5">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Templete Driven Form</mat-card-title>
+    </mat-card-header>
+
+    <form #f="ngForm">
+      <div class="mb-3 mt-3">
+        <label for="id" class="form-label">Id:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="id"
+          placeholder="Enter id"
+          name="id"
+          [(ngModel)]="model.id"
+          #id="ngModel"
+          minlength="2"
+
+          [ngClass]="{ 'is-invalid': f.submitted && id.invalid }"
+          />
+          <div class="invalid-feedback" *ngIf="f.submitted && id.invalid">
+          <div *ngIf="id.errors?.['minlength']"> minlength 2</div>
+           </div>
+
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">First name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="pwd"
+          placeholder="Enter password"
+          name="fname"
+          [(ngModel)]="model.fname"
+          #fname="ngModel"
+          required
+
+          [ngClass]="{ 'is-invalid': f.submitted && id.invalid }"
+          />
+          <div class="invalid-feedback" *ngIf="f.submitted && id.invalid">
+          <div *ngIf="fname.errors?.['required']"> input  required</div>
+           </div>
+
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Last name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="lname"
+          [(ngModel)]="model.lname"
+          #lname="ngModel"
+          required
+
+
+
+          [ngClass]="{ 'is-invalid': f.submitted && id.invalid }"
+          />
+          <div class="invalid-feedback" *ngIf="f.submitted && id.invalid">
+          <div *ngIf="lname.errors?.['required']"> input  required</div>
+           </div>
+
+
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="pwd"
+          placeholder="Enter password"
+          name="pswd"
+          [(ngModel)]="model.pswd"
+          #pswd="ngModel"
+          required
+
+
+
+
+          [ngClass]="{ 'is-invalid': f.submitted && id.invalid }"
+          />
+          <div class="invalid-feedback" *ngIf="f.submitted && id.invalid">
+          <div *ngIf="pswd.errors?.['required']"> input  required</div>
+           </div>
+
+
+
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="pwd"
+          placeholder="Enter Email"
+          name="email"
+          [(ngModel)]="model.email"
+          #email="ngModel"
+          required
+
+
+
+          [ngClass]="{ 'is-invalid': f.submitted && id.invalid }"
+          />
+          <div class="invalid-feedback" *ngIf="f.submitted && id.invalid">
+          <div *ngIf="email.errors?.['required']"> input  required</div>
+           </div>
+
+
+      </div>
+
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="remember"
+            ngModel
+          />
+          Remember me
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary" (click)="onSubmit(f.value)">
+        Submit
+      </button>
+    </form>
+  </mat-card>
+</div>

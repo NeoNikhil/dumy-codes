@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px red double;
+            box-sizing: border-box;
+            border-radius: 6px;
+            padding: 2px;
+            display: grid;
+            gap: 10px;
+            /* row-gap: 30px; */
+            grid-template-columns: 1fr 2fr 1fr ;
+            grid-template-rows: 17px 50px ;
+            grid-auto-rows: 50px;
+        }
+        .box{
+            /* border: 2px rgb(48, 47, 47) solid; */
+            
+
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            box-shadow: 2px 2px 10px 1px rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+        /* #box-3{
+            grid-row-start: 3;
+            grid-row-end: 6;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+        <div class="box" id="box-11">box-11</div>
+    </div>
+    
+</body>
+</html>

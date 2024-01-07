@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // EX of Find
+
+        let  a = [
+            {id:1,name:"nikhil",Uid:32},
+            {id:2,name:"jack",Uid:33},
+            {id:2,name:"jack",Uid:33},
+            {id:3,name:"utkrist",Uid:34},
+            {id:2,name:"jack",Uid:33},
+
+        ];
+
+
+        let b = a.findLastIndex(item => item.id == 24
+        )
+
+        // alert(`your result is ${b}`);
+
+        if(b == -1)
+        alert("sry to inform you  your value is unavailable in arr try with else value")
+       else
+       alert(`your result is ${b}`);
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.Dropdown{
+    background-color: rgb(34, 119, 194);
+    width: 90px;
+    padding: 10px;
+    border-radius: 0px 15px 0px 15px;
+
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+
+
+.material-icons{
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+}
+
+
+.Dropdown-c{
+    background-color: rgb(228, 217, 217);
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    border-radius: 0px 15px 0px 15px;
+
+    position: absolute;
+    left: 4px;
+        top: 38px;
+    display: none;
+box-shadow: 1px 2px 3px black;
+}
+
+
+.Dropdown-c a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0px;
+    color: black;
+
+}
+
+
+.Dropdown:hover>.Dropdown-c {
+    display: block;
+
+}
+
+
+.Dropdown:hover {
+   background-color: blueviolet;
+   box-shadow: 1px 1px 10px blueviolet;
+
+}
+
+
+li:hover{
+    background-color: rgb(189, 179, 179);;
+    box-shadow: 3px 3px 4px rgb(0, 0, 0);
+border-radius: 0px 15px 0px 15px;
+
+}

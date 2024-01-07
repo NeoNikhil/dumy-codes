@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // let x = Math.random()
+        // document.write("before"+ " " + x +"<br>");
+        // x = +x*(10000-1)+1 
+
+        // // rn*(hiegest-low)+low
+        // let y = Math.floor(x)
+        // document.write("after"+   " "+y );
+
+
+
+        let a = prompt("Enter 1st value");
+        let b = prompt("Enter 2nd value");
+        let c = prompt("Enter 3rd value");
+
+
+        let a1 = a%10;
+        let b1 = b%10;
+        let c1 = c%10;
+
+
+        if(a1==b1&& a1===c1)
+        document.write(`${a} ${b} ${c} is having same last digit`);
+
+        else{
+        document.write(`${a} ${b} ${c} is not having same last digit`);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

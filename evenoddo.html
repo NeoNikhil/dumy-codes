@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = prompt("whats your USER_NAME");
+    let b = alert(`welcome ${a}`)
+    if(confirm("are u sure u wnat to begnin this proces")){
+
+        let no = prompt(`hii ${a}!! Press 1 for even odd, Press2 for grether among 2, Press 3 greter among 3no`)
+        
+ 
+
+
+
+    if(no == 1){
+     let n =prompt(` ${a},you choose even odd function!! now u have to chho any random no `);
+
+
+     if(n%2==0){
+          document.write(`${n}is even`);
+     }else{
+          document.write(`${n}is odd`);
+     } 
+    
+
+    }else if(no==2){
+     let a1 = prompt(`select no for A`);
+     let b = prompt(`select no for B`);
+     document.write(`A is ${a1} <br> B is ${b}`)
+
+     if(a>b){
+       document.write(`A is grether then B`);
+     } else if(a<b){
+        document.write(`B is grether then A`);
+
+     }else{
+        document.write(`Error`);
+     }
+
+
+    }else if(no==3){
+        let a2 = prompt(`select no for A`);
+
+     let b1 = prompt(`select no for B`);
+     let c = prompt(`select no for C`);
+     document.write(`A is ${a1} <br> B is ${b} <br> B is ${c}`)
+
+     if(a>b){
+       document.write(`A is grether then B`);
+     } else if(a<b){
+        document.write(`B is grether then A`);
+
+     }else{
+        document.write(`Error`);
+     }
+
+
+
+
+   }else {
+     document.write(`sry ${a},Choose the right one, try again!!`);
+}
+
+
+
+    }
+    </script>
+</body>
+</html>

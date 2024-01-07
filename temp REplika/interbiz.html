@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interbiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .d1 {
+        border: 1px solid red;
+        /* display: flex; */
+        padding-left: 160px;
+      }
+
+      ul li {
+        list-style-type: none;
+      }
+
+      .d2 {
+        display: flex;
+        padding-top: 25px;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .s1 {
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(250, 250, 250);
+        width: 100%;
+      }
+
+
+
+      .s3-l{
+    box-shadow: 1px 2px 16px #49494950;
+   padding: 85px;
+
+   height: 85vh;
+        padding-top: 30px;
+
+
+      }
+
+
+
+
+
+      .s3-r{
+        padding: 45px 0px;
+
+      }
+     
+
+      .slider-text {
+        position: absolute;
+        top: 280px;
+        text-align: center;
+        left: 160px;
+        color: white;
+      }
+
+      .carousel-item {
+        position: relative;
+      }
+
+      .S-btn {
+        color: white;
+        background-color: #1a237e;;
+        border-radius: 50px;
+        border: none;
+        padding: 0px 40px 0px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+        
+        position: absolute;
+        left: 550px;
+        top:345px
+       
+      }
+
+
+
+      .s3{
+        margin: 60px 25px 50px 25px;
+      }
+
+
+.section3-header{
+    
+    text-align: center !important;
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    padding-bottom: 20px !important;
+
+
+
+    
+}
+
+
+
+.section3-p{
+font-size: 17px !important;
+font-weight: 400 !important;
+}
+
+
+.s3-btn{
+   
+        color: white;
+        background-color: #1a237e;;
+        border-radius: 50px;
+        border: none;
+        padding: 0px 40px 0px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+
+        margin-top: 30px;
+}
+
+    .s4{
+        justify-content: space-around;
+    text-align: center;
+    }
+
+
+    .s4-c{
+      background-color: rgb(255, 255, 255);
+    }
+
+
+
+    .s4-btn{
+      
+        color: white;
+        background-color: #1a237e;;
+        border-radius: 50px;
+        border: none;
+        padding: 0px 40px 0px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+
+    }
+
+
+    .s4-mc{
+      text-align: center;
+    }
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class=" row s1">
+
+
+            <div class="col-4">
+                <img src="./cropped-ibzLogo.png" width="100%" class="d1">
+            </div>
+
+            <div class="col-8 ">
+               <ul class="d2">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Products</li>
+                <li>services</li>
+                <li>Developer Partnerships</li>
+                <li>Blogs</li>
+                <li>Career</li>
+                <li>Contact Us</li>
+               </ul>
+            </div>
+    </div>     -->
+
+    <!-- s2 -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.brinknews.com/wp-content/uploads/2019/12/shutterstock_1031044285.jpg"
+            alt="Los Angeles"
+            width="1100"
+            height="500"
+          />
+
+          <h1 class="slider-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+
+          <button class="S-btn">Read More</button>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="https://www.brinknews.com/wp-content/uploads/2019/12/shutterstock_1031044285.jpg" alt="Los Angeles" width="1100" height="500">
+            
+            <h1 class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+             <button class="S-btn">Read More</button>
+          </div>
+
+
+          <div class="carousel-item ">
+            <img src="https://www.brinknews.com/wp-content/uploads/2019/12/shutterstock_1031044285.jpg" alt="Los Angeles" width="1100" height="500">
+            
+            <h1 class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+             <button class="S-btn">Read More</button>
+          </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+
+
+    <!-- s3 -->
+
+
+   
+
+
+            <div class="row s3">
+
+                <div class="col-sm-6 s3-r">
+                    <img src="https://interbizconsulting.com/wp-content/uploads/2019/07/25388715424_65480dbf18_k-930x620.jpg" width="100%">
+                </div>
+
+
+
+                <div class="col-sm-6 s3-l " >
+
+
+                    <h4 class="section3-header">What Is Interbiz?</h4>
+                    <p class="section3-p">Interbiz Consulting is a boutique software development company focused on using technology to automate and improve business processes. Our agile approach to product development and launch allows us to partner with our clients to provide economical and easy-to-use solutions.</p>
+
+                        <p class="section3-p">Our team takes pride in having helped clients successfully launch their MVPs and scale while saving millions of dollars in software development costs and reducing their time-to-market by over 35 percent.</p>
+
+
+                        <button class="s3-btn">Read More</button>
+
+
+
+
+
+                        </div>
+    
+            </div>
+
+
+
+<!-- s4 -->
+
+<div style="background-color: #54595f13;;">
+
+<div class="container">
+
+
+
+            <div class=" s4">
+
+                <h4>Our Services</h4>
+                <p>Interbiz provides software development services for all industries with a focus on healthcare services. Many innovations have propelled the healthcare industry in the past several years. But even with extensive advances, manual processes and redundancies remain that adversely impact providers, patients, and their families. Interbiz understands your needs and works with you to provide quality outcomes.</p>
+              </div></div>
+
+
+                <div class="row s4-mc">
+
+
+                <div class="col-3 s4-c">
+
+
+                    <h3>Progressive Web Apps</h3>
+
+                    <p>Reliable browsing with offline connectivity. New concept that bridges the gap between websites and mobile apps. These apps promise offline capabilities as well as improved speed and performance.</p>
+
+                    <button class="s4-btn">Read More</button>
+                </div>
+                <div class="col-3 s4-c">
+
+
+
+                    <h3>Cloud Computing</h3>
+                    <p>
+                        Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet .</p>
+                    <button class="s4-btn">Read More</button>
+
+                </div>
+                <div class="col-3 s4-c">
+
+                    <h3>UI &UX Design</h3>
+                    <p>Good design and the ability to pivot rapidly to meet consumer demand are two important strategies to stay ahead of the competition. Create innovative User Interfaces to deliver professional, meaningful, and seamless experiences for your clients.</p>
+                    <button class="s4-btn">Read More</button>
+
+                </div>
+               
+
+              </div>
+
+
+            </div>
+
+</div>
+</div>
+
+
+     
+  </body>
+</html>

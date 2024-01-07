@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [7,3,5,[2],[4,[6,10,[1,9]]]];
+        let b =arr.flat(Infinity)
+        console.log(arr);
+        
+        let swap;
+        let int = 0;
+
+        for(let i=0;i<=b.length;i++){
+            for(let j=i;j<=b.length;j++){
+         if(b[i]>b[j]){
+                
+            swap = b[i];
+            b[i]=b[j];
+            b[j]=swap
+         }   
+
+         }
+        }
+        console.log(b);
+        let c=b.reduce((acum,curent)=>{
+        //   return acum+curent;
+          return acum+curent
+        });
+        console.log(c);
+
+        </script>
+    
+</body>
+</html>

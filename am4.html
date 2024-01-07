@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // EX of set
+
+        
+        let  A = {id:1,name:"nikhil",Uid:32}
+        let  B = {id:21,name:"jack23",Uid:33}
+        let  c = {id:21,name:"Novs",Uid:3309}
+
+
+        let  a = [ A,B,B,B,A,A,A,A,A,A,A,A];
+
+    let  b = new Set(a);
+
+
+    b.add(c)
+    b.clear()
+    console.log(b);
+    b.size
+    console.log();
+    
+    for( let data of b) {
+        console.log(data.name)
+
+    }
+
+        
+        
+
+      
+
+       
+
+    </script>
+</body>
+</html>

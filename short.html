@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [6,3,2,4,8,9,1];
+        let arr = [8,2,4,10];
+        let swap;
+        // let new_arr = arr.sort();
+        for(let i=0; i<arr.length;i++){
+
+            for(j=i; j<arr.length;j++){
+
+                if(arr[i] > arr[j]){
+                    swap = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = swap;
+                }
+                document.write(`${arr} <br>`)
+            }
+        }
+        console.log(arr);
+    </script> 
+</body>
+</html>

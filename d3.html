@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            background-color: aqua;
+            height: 250px; 
+        }
+        #inner{
+            background-color: rgb(0, 4, 255);
+            height: 200px; 
+            margin: 3px 15px 0px 15px;
+        }
+
+        li{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;
+            margin: 10px 150px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+ <div id="outer">
+    outer
+  <div id="inner">
+    <h4>Inner</h4>
+        <li>A</li>
+        <li>B</li>
+        <li id="c1">C</li>
+        <li>D</li>
+        <li>E</li>
+
+
+   
+
+ 
+  </div>
+ </div>
+
+    <script>
+        let x = document.getElementById("inner").parentNode.style.backgroundColor="yellow";
+        // let y = document.getElementById("inner").childNodes[1].style.backgroundColor="yellow";
+    //    console.log(y);
+       
+    //    let a = document.getElementById("inner").firstChild
+    //    console.log(a);
+
+
+    let a = document.getElementById("c1").previousElementSibling.style.backgroundColor="yellow";
+       console.log(a);
+    </script>
+    
+</body>
+</html>
